@@ -44,4 +44,4 @@ There are no outputs for this playbook.
 
 ---
 
-![SpyCloud Breach](../doc_files/SpyCloud_Breach_Playbook.png)
+![SpyCloud Breach](SpyCloud_Breach_Playbook.png)

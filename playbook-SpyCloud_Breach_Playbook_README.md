@@ -1,6 +1,7 @@
 # SpyCloud - Breach Investigation
 
- This playbook enables the investigation of SpyCloud Breach incidents. This playbook can be used to perform the below actions. Please note that the playbook provides a basic skeleton for the following actions, users need to implement the logic according to their needs.
+ This playbook enables the investigation of SpyCloud Breach incidents. This playbook can be used to perform the below actions. Please note that the playbook provides a 
+ basic skeleton for the following actions, users need to implement the logic according to their needs.
 
 - Check if the breached password length is >= the minimum required by the organization. If not, exit the playbook.
 - Check if the user is currently an active employee. If not, exit the playbook.

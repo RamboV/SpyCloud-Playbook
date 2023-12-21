@@ -1,14 +1,20 @@
-This is SpyCloud Breach playbook. It execute when any incident of `SpyCloud Breach Data` type is created.
+## SpyCloud - Breach Investigation
 
-## Steps to be perform by user
+This playbook gets triggered when an incident of `SpyCloud Breach Data` type is created. The Playbook:
+
+- Check if the breached password length is >= the minimum required by the organization. If not, exit the playbook.
+- Check if the user is currently an active employee. If not, exit the playbook.
+- Check if the exposed password is in use on the network (check AD, check Okta, check Ping, check G-Suite, etc.
+- If the password is in use in one of the checked systems, perform a password reset, raise an incident, etc.
+
+
+### Note:
+This playbook acts as a basic structure, offering users a point of reference. Kindly perform your own internal logic for the following task:
 
 - Provide the password length as playbook input.
-#### Task-2 "Check if the user is currently an active employee"
-- This is a skeleton task for user reference. Please implement your internal logic to check current employee in your network. 
-#### Task-3 "Check if the exposed password is in use on the network"
-- This is a skeleton task for user reference. Please implement your internal logic to check exposed password.
-#### Task-4 "Perform a password reset and escalate"
-- This is skeleton task for user reference. Please perform password reset logic here.
+- Task-2 "Check if the user is currently an active employee"
+- Task-3 "Check if the exposed password is in use on the network"
+- Task-4 "Perform a password reset and escalate"
 
 ## Dependencies
 
